@@ -1,0 +1,89 @@
+.feature{
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.feature-item{
+    position: relative;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.feature-item img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.overlay{
+    position:absolute;
+    background-color: rgba(0,0,0,0.7);
+    color:#E59500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 30px;
+    left: 0;
+    right: 0;
+    top: 85%;
+    height: 15%;
+}
+
+.feature-item:hover .overlay {
+    opacity: 1;
+}
+
+footer{
+    display: flex;
+    margin-top: 5%;
+    background-color: #cfcfcf;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 10%;
+    flex-direction: row;
+}
+footer li{
+    list-style-type: none;
+    color: black;
+    width: 100%;
+    margin: 0 10px;
+    font-size: 20px;
+}
+footer nav a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+footer a:link{
+    color: black;
+}
+footer a:visited{
+    color: black;
+}
+footer a:hover{
+    color: black;
+}
+footer img{
+    margin-right: 5px;
+    width: 40px;
+    mix-blend-mode: multiply;
+    
+} 
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

@@ -1,0 +1,95 @@
+main{
+    color: #1E1E1E;
+}
+p{
+    font-size: 22px;
+}
+.project-details{
+    padding-top: 8%;
+    padding-bottom: 6%;
+}
+.project-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-name{
+    text-align: center;
+    font-size: 45px;
+}
+.project-desc{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: larger;
+    margin: 1% 10%;
+}
+.parent-text{
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.overview{
+    grid-column: 1;
+    margin-right: 3%;
+}
+.showcase-overview{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.subTitle{
+    grid-column: 1;
+    display: flex;
+    font-size: larger;  
+}
+.subTitle p{
+    margin: auto;
+    margin-left: 10px;
+    font-size: 22px;
+}
+.responsibility{
+    grid-column: 1;
+    margin-right: 3%;
+}
+.gallery{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.game-column{
+    flex: 33%;
+    max-width: 100%;
+}
+.game-column img{
+    display: flex;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgs p{
+    text-align: center;
+    margin: 5px;
+}
+.column{
+    flex: 33%;
+    max-width: 27%;
+}
+.column img {
+    display: flex;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

@@ -3,16 +3,15 @@ body{
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background-color: #0c0d0e;
+    background-color: #F8F8F8;
 }
 #navbar{
     display: flex;
     flex-direction: row;
     width: 100%;
-    border-bottom: 2px solid #cfcfcf;
     position:fixed;
     z-index: 999;
-    background-color: #0c0d0e;
+    background-color: #000000;
 }
 #navbar h1{
     padding-left: 5%;
@@ -20,9 +19,9 @@ body{
  
 #navbar h2{
     color: #cfcfcf;
-   margin:auto;
-   margin-left: 3%;
-   margin-right: 0;
+    margin:auto;
+    margin-left: 3%;
+    margin-right: 0;
    
 }
 /* Links */
@@ -36,17 +35,15 @@ a:link{
     color:#cfcfcf;
 }
 
-
 #intro{
     padding-top: 5%;
 }
 
-
 /*Games Class*/
 .game{
     margin: 5% 20%;
-    background-color: #0c0d0e;
-    border: 2px solid #cfcfcf;
+    background-color: #F0F0F0;
+    border: 2px solid #1E1E1E;
 
 }
 
@@ -117,19 +114,20 @@ a:link{
 
 
 #intro{
-    background-color: #0c0d0e;
-    color: white;
+    background-color: #cfcfcf;
+    color: #1E1E1E;
     text-align: center;
-    border-bottom: 2px solid #cfcfcf;
 }
 #intro h2{
     font-size: 2em;
 }
 #intro p{
     font-size: 1.5em;
-    margin: 5% 20%;
+    margin: 3% 10%;
 }
-
+.feature{
+    margin-bottom: 3%;
+}
 #feature h3{
     color: #0c0d0e;
 }
