@@ -42,6 +42,10 @@ p{
     display: flex;
     font-size: larger;  
 }
+.subTitle h2{
+    font-size: larger;
+    margin: 1% 0;
+}
 .subTitle p{
     margin: auto;
     margin-left: 10px;

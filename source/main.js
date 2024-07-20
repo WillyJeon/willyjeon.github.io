@@ -42,6 +42,8 @@ export function loadProjectData(){
     let images = project.imageGallery;
     let role = project.role;
     let timeline = project.timeSpent;
+    let engine = project.engine;
+    let tools = project.tools;
     let responsibilities = project.responsibilities;
     
     document.querySelector(".project-name").textContent = name;
@@ -73,6 +75,28 @@ export function loadProjectData(){
             container.appendChild(roleText);
             parent.appendChild(container);
         }
+        if(engine){
+            let container = document.createElement("div");
+            let header = document.createElement("h2");
+            container.classList.add("subTitle");
+            header.innerHTML = "Engine: ";
+            container.appendChild(header);
+            let engineText = document.createElement("p");
+            engineText.innerHTML = engine;
+            container.appendChild(engineText);
+            parent.appendChild(container);
+        }
+        if(tools){
+            let container = document.createElement("div");
+            let header = document.createElement("h2");
+            container.classList.add("subTitle");
+            header.innerHTML = "Engine: ";
+            container.appendChild(header);
+            let toolText = document.createElement("p");
+            toolText.innerHTML = tools;
+            container.appendChild(toolText);
+            parent.appendChild(container);
+        }
         if(timeline){
             let container = document.createElement("div");
             let header = document.createElement("h2");
@@ -84,10 +108,11 @@ export function loadProjectData(){
             container.appendChild(timeText);
             parent.appendChild(container);
         }
+        
         if(responsibilities){
             let container = document.createElement("div");
             let header = document.createElement("h2");
-            header.innerHTML = "Responsibilities";
+            header.innerHTML = "Responsibilities:";
             let resp = document.createElement("p");
             container.classList.add("responsibility");
             resp.innerHTML = responsibilities;
