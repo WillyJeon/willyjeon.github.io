@@ -49,6 +49,7 @@ export function loadProjectData(){
     document.querySelector(".project-name").textContent = name;
 
     if(type == "game"){
+        document.querySelector(".project-details").style.margin = "auto 8%";
         let parent = document.createElement("div");
         parent.classList.add("parent-text");
         let body = document.createElement("div");
@@ -90,7 +91,7 @@ export function loadProjectData(){
             let container = document.createElement("div");
             let header = document.createElement("h2");
             container.classList.add("subTitle");
-            header.innerHTML = "Engine: ";
+            header.innerHTML = "Tool(s) Used: ";
             container.appendChild(header);
             let toolText = document.createElement("p");
             toolText.innerHTML = tools;

@@ -79,6 +79,43 @@
             ]
         },
         {
+            "type": "game",
+            "name": "Olympus Interactive Site",
+            "coverImage": "./img/olym/site.png",
+            "trailer": "",
+            "timeSpent": "May 2024 - August 2024",
+            "role": "Web Designer",
+            "overview": "&emsp;This website is a side-project of mine  to allow my small group of developers to have a homepage for our work. It was designed in a short time and was an oppurtunity for me to polish on by web design skills with Figma.",
+            "goals": "",
+            "responsibilities": "&emsp;I was responsible for the design the page. I utilized Figma, to design and framework a basic website to showcase the project that my group has worked on. I mainly did the design work, while the main developer worked on the site.",
+            "retrospect": "",
+            "engine": "",
+            "tools": "Figma",
+            "link":"",
+            "imageGallery":[
+                {
+                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/olympussite/olympussite_mockup.png",
+                    "subtitle":"Landing Page and Project"
+                },
+                {
+                    "url":"./img/olym/team.png",
+                    "subtitle":"Team Section"
+                },
+                {
+                    "url":"./img/olym/services.png",
+                    "subtitle":"Servies Section"
+                },
+                {
+                    "url":"./img/olym/aboutus.png",
+                    "subtitle":"About Us Section"
+                },
+                {
+                    "url":"./img/olym/contact.png",
+                    "subtitle":"Contact and Footer Section"
+                }
+            ]
+        },
+        {
             "type": "showcase",
             "name": "VFX",
             "coverImage": "./img/vfx/slashnew.gif",
