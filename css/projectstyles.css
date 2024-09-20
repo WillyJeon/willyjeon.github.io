@@ -96,4 +96,37 @@ p{
     margin-right: auto;
 }
 
+.group-links{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+.group-links div{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3%;
+    border-bottom: 2px solid #1E1E1E;
+}
+
+.work-date{
+    justify-self: end;
+}
+.document-link{
+    color: black;
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: .5rem;
+    font-size: 20pt;
+}
+
+.document-link{
+    text-decoration: underline;
+}
+.document-link:visited{
+    color:black;
+}
+.document-link:link{
+    color:black;
+}

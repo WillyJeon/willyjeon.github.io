@@ -45,6 +45,7 @@ export function loadProjectData(){
     let engine = project.engine;
     let tools = project.tools;
     let responsibilities = project.responsibilities;
+    let links = project.links;
     
     document.querySelector(".project-name").textContent = name;
 
@@ -154,7 +155,7 @@ export function loadProjectData(){
             body.appendChild(gallery);
         }
     }
-    else if(type == "showcase" || type == null){
+    else if(type == "showcase"){
         let body = document.createElement("div");
         body.classList.add("project-desc");
         if(desc){
@@ -192,6 +193,46 @@ export function loadProjectData(){
 
                 columns[i%columns.length].appendChild(container);
             }
+        }
+    }
+    else if(type == "links"){
+        let body = document.createElement("div");
+        body.classList.add("project-desc");
+        if(desc){
+            let container = document.createElement("div");
+            container.classList.add("showcase-overview");
+            let overText = document.createElement("p");
+            overText.innerHTML = desc;
+            container.appendChild(overText);
+            body.appendChild(container);
+        }
+        details.appendChild(body);
+        if(links){
+            let encompass = document.createElement("div");
+            encompass.classList.add("group-links")
+            for(let i = 0; i < links.length; i++){
+                let container = document.createElement("div");
+                let title = document.createElement("h1");
+                let date = document.createElement("h1");
+                let link = document.createElement("a");
+                title.innerHTML = links[i].title;
+
+                date.classList.add("work-date");
+                date.innerHTML = links[i].date;
+
+                link.classList.add("document-link");
+                link.target = "blank";
+                link.setAttribute("href", links[i].link);
+                link.innerHTML = "Link to Document";
+
+                container.appendChild(title);
+                container.appendChild(date);
+                container.appendChild(link);
+                encompass.appendChild(container);
+            }
+
+            body.appendChild(encompass);
+
         }
     }
     

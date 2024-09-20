@@ -150,6 +150,7 @@
             ]
         },
         {
+            "type": "showcase",
             "name": "Shaders",
             "coverImage": "./img/shaders/cel-shading.gif",
             "trailer": "",
@@ -180,6 +181,50 @@
                 }                    
                
             ]
+        },
+        {
+            "type" : "links",
+            "name": "Game Design Documents",
+            "coverImage": "./img/document.png",
+            "trailer": "",
+            "role": "",
+            "overview": "&emsp;Here are any game design documents that I have worked on or hope to eventually start.",
+            "goals": "",
+            "responsibilities": "",
+            "retrospect": "",
+            "links":[
+                {
+                    "title" :"Ninjas on Trampolines Design Document",
+                    "date" : "Sept 2023 - Present",
+                    "link" : "https://docs.google.com/document/d/1VzbaXHNuhw9445c2Qm5PXf4R0Jn5yNRlm7IDgVhKtI4/edit?usp=sharing"
+                },
+                {
+                    "title" :"Nebulicious Design Document",
+                    "date" : "2 Weeks",
+                    "link" : "https://docs.google.com/document/d/1Ek1YsNrmnBxao7xPV4B0l6KNCt-yG7aMEzFaVddeYqg/edit?usp=sharing"
+                },
+                {
+                    "title" :"Helpless Design Document",
+                    "date" : "1 Week",
+                    "link" : "https://docs.google.com/document/d/18OGNfsIwT99Oo75fd28T4Td8Qt6gd3dOsU3-HkybI4U/edit?usp=sharing"
+                },
+                {
+                    "title" :"Gate Crash Design Document",
+                    "date" : "Dec 2022 - Present",
+                    "link" : "https://docs.google.com/document/d/1IjDalesYixSGFHQ4QxXLbGa-aZ6wMr9p-DpiheLY6rM/edit?usp=sharing"
+                },
+                {
+                    "title" :"PROJECT: Gladiator Design Document",
+                    "date" : "Sept 2024 - Present",
+                    "link" : "https://docs.google.com/document/d/1JScY-xs7dM5bUklUMA1yvLFyu49hAWLyfzrCwvNkT4s/edit?usp=sharing"
+                },
+                {
+                    "title" :"Changeling VR Technical Art Documentation",
+                    "date" : "May 2023 - Aug 2023",
+                    "link" : "https://docs.google.com/document/d/1E7ptMnWlWz28l1a6cuzR2rM1qOa7uT93ywZbXIzBtXM/edit?usp=sharing"
+                }
+            ],
+            "imageGallery":""
         }
     ]
 }
