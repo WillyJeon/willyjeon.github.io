@@ -194,9 +194,19 @@
             "retrospect": "",
             "links":[
                 {
+                    "title" :"PROJECT: Gladiator Design Document",
+                    "date" : "Sept 2024 - Present",
+                    "link" : "https://docs.google.com/document/d/1JScY-xs7dM5bUklUMA1yvLFyu49hAWLyfzrCwvNkT4s/edit?usp=sharing"
+                },
+                {
                     "title" :"Ninjas on Trampolines Design Document",
                     "date" : "Sept 2023 - Present",
                     "link" : "https://docs.google.com/document/d/1VzbaXHNuhw9445c2Qm5PXf4R0Jn5yNRlm7IDgVhKtI4/edit?usp=sharing"
+                },
+                {
+                    "title" :"Gate Crash Design Document",
+                    "date" : "Dec 2022 - Present",
+                    "link" : "https://docs.google.com/document/d/1IjDalesYixSGFHQ4QxXLbGa-aZ6wMr9p-DpiheLY6rM/edit?usp=sharing"
                 },
                 {
                     "title" :"Nebulicious Design Document",
@@ -207,16 +217,6 @@
                     "title" :"Helpless Design Document",
                     "date" : "1 Week",
                     "link" : "https://docs.google.com/document/d/18OGNfsIwT99Oo75fd28T4Td8Qt6gd3dOsU3-HkybI4U/edit?usp=sharing"
-                },
-                {
-                    "title" :"Gate Crash Design Document",
-                    "date" : "Dec 2022 - Present",
-                    "link" : "https://docs.google.com/document/d/1IjDalesYixSGFHQ4QxXLbGa-aZ6wMr9p-DpiheLY6rM/edit?usp=sharing"
-                },
-                {
-                    "title" :"PROJECT: Gladiator Design Document",
-                    "date" : "Sept 2024 - Present",
-                    "link" : "https://docs.google.com/document/d/1JScY-xs7dM5bUklUMA1yvLFyu49hAWLyfzrCwvNkT4s/edit?usp=sharing"
                 },
                 {
                     "title" :"Changeling VR Technical Art Documentation",
