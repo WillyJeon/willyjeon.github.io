@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background-color: #F8F8F8;
+    background-color: #cfcfcf;
 }
 #navbar{
     display: flex;

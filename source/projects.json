@@ -80,6 +80,31 @@
         },
         {
             "type": "game",
+            "name": "PROJECT: Gladiator",
+            "coverImage": "./img/gladiator/swordattack.gif",
+            "trailer": "",
+            "timeSpent": "September 2024 - Present",
+            "role": "",
+            "overview": "&emsp;Project: Gladiator is a two-player co-op game where players will fight against each other in a 2v2 style combat where duos have to cooperate in combat. Communication and synergy are the most important to win and survive these fights. Matches will consist of 4 pairs entering the arena, which will resemble the Colosseum. This game takes inspiration from the movie Gladiator with the main gimmick coming from games like Chained Together and Bred & Fred. While much of the basic combat will feel close to that of Souls games like Elden Ring and Dark Souls. <br>&emsp;Players will not be able to move a certain distance from each other, including movements like backstepping and rolling. All the actions will take place from a third-person perspective. The combat will act similarly to a souls-like combat system, with heavy and light attacks and combos for each.",
+            "goals": "",
+            "responsibilities": "&emsp;I am the sole developer of this project and developed every feature. I took inspiration from souls like games for the combat system while trying to keep a co-op focused game with the chain attached to each player. The players will start in different parts of the arena where only the last remaining team that is left alive will become the victor of the gladiator fight. I want these fights to feel similar to that of the scenes within the first Gladiator movie where we see Maximus have his first gladiator fight. <br>&emsp; Co-op games like It Takes Two, Chained Together, and Bread and Fred, which this game took inspiration from. I found that games such as these were popular with content creators while they were fun to watch, seeing the stress and frustration is what I found fun to watch from any streams or short videos I would see of those games.", 
+            "retrospect": "",
+            "engine": "Unity",
+            "tools": "C#, Shader Graph, Visual Effects Graph",
+            "link":"",
+            "imageGallery":[
+                {
+                    "url":"./img/gladiator/swordattack.gif",
+                    "subtitle": "Menu Screen"                    
+                },
+                {
+                    "url":"./img/gladiator/backstep.gif",
+                    "subtitle": "Menu Screen"                    
+                }
+            ]
+        },
+        {
+            "type": "game",
             "name": "Olympus Interactive Site",
             "coverImage": "./img/olym/site.png",
             "trailer": "",
