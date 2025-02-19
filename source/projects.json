@@ -9,7 +9,7 @@
             "role": "Technical Artist / Marketing Lead",
             "overview": "&emsp;Ninjas on Trampolines is a physics-based platform fighter where players play as Ninjas that can paint their own colors on the wall. The objective of the game is to have the most of your own color on the back wall by the end of a match, which can be done by smacking other players or using a spray can to graffiti the background. <br>&emsp;The game features three different game modes: Free-for-All, Spray King, and Paintball. Each gamemode takes a twist on the simple, yet extremely captivating game loop of Free-for-All by introducing new objectives for players. Paintball has players chase a soccer ball-like object, while Spray King has players chase another player holding an item that gives them an advantage.",
             "goals": "",
-            "responsibilities": "&emsp;During the first few months of development, my main priority was to get a working paint system and refining it to be more visually pleasing. There were other minor tasks as setting up the basic movement system, animations, and UI. <br><br>&emsp;For the initial paint shader I followed two videos on their take of Splatoon's paint effect, taking notes on how they setup a system using both shader code and graph to setup a basic mask over any texture that they would want to get painted. After getting an inital version of the paint done, players would be able to get their paint onto the background with circles being shown where they killed an opponenet. After showing off the game a suggestion that we took was to make the paint be based off velocity which would make the paint seem more dynamic as the shape and length would be different for each kill. By the end of the 3rd milestone I had implemented and worked on basic scene transitions of a fade in/out, sound effects, music, and a small edits to the paint shader.<br><br>&emsp;After the third milestone I would further work on the paint shader making slight improvements from its initial version by adding the use of premade textures, as well as changing the look of the velocity based paint, by scaling the texture according to the speed of the attack instead of painting multiple versions of the splatter onto the background. <br><br>&emsp;I had also started to work on implementing a basic post process shader to aid players that may have forms of color blindness. While the shader is still a work in progress there is a filter for the three most common types being protanopia, tritanopia, and deuteranopia. There are still some small things that need to be addressed with some colors being too close together. Since there are eight colors available to the players to use so there will be an issue with some colors being too similar to each other. I tried addressing this by adding a contrast filter to try and make the difference betweent the colors even greater and adding a pattern filter so that there are three different patterns that get layered on top of certain player's paint to give it some extra texture. While these are not ''perfect'', it is something that the team has come to acknowledge, so that if someone who would like to play our game has color blindness, this filter would help in differentiating the colros for the player.",
+            "responsibilities": "&emsp;During the first few months of development, my main priority was to get a working paint system and refining it to be more visually pleasing. There were other minor tasks as setting up the basic movement system, animations, and UI. <br><br>&emsp;For the initial paint shader I followed two videos on their take of Splatoon's paint effect, taking notes on how they setup a system using both shader code and graph to setup a basic mask over any texture that they would want to get painted. After getting an inital version of the paint done, players would be able to get their paint onto the background with circles being shown where they killed an opponenet. After showing off the game a suggestion that we took was to make the paint be based off velocity which would make the paint seem more dynamic as the shape and length would be different for each kill. By the end of the 3rd milestone I had implemented and worked on basic scene transitions of a fade in/out, sound effects, music, and a small edits to the paint shader.<br><br>&emsp;After the third milestone I would further work on the paint shader making slight improvements from its initial version by adding the use of premade textures, as well as changing the look of the velocity based paint, by scaling the texture according to the speed of the attack instead of painting multiple versions of the splatter onto the background. This also helped with lowering the amount of draw calls that would be made to the GPU which would noticeably lower the framerate of the game. <br><br>&emsp;I had also started to work on implementing a basic post process shader to aid players that may have forms of color blindness. While the shader is still a work in progress, there is a filter for the three most common types being protanopia, tritanopia, and deuteranopia. There are still some small things that need to be addressed with some colors being too close together. Since there are eight colors available to the players to use so there will be an issue with some colors being too similar to each other. I tried addressing this by adding a contrast filter to try and make the difference betweent the colors even greater and adding a pattern filter so that there are three different patterns that get layered on top of certain player's paint to give it some extra texture. While these are not ''perfect'', it is something that the team has come to acknowledge, so that if someone who would like to play our game has color blindness, this filter would help in differentiating the colros for the player. <br><br>&emsp;There have been some more recent changes since January 2025. Starting with movement for the game, players felt that there was a lack of movement while they were in the air. Taking this into account an air dash was added, allowing the player to do a quick dash while moving in the air. ",
             "retrospect": "",
             "engine": "Unity",
             "tools": "C#, HLSL, Shader Graph, Visual Effects Graph",
@@ -100,6 +100,42 @@
                 {
                     "url":"./img/gladiator/backstep.gif",
                     "subtitle": "Menu Screen"                    
+                }
+            ]
+        },{
+            "type": "game",
+            "name": "Doodle Day",
+            "coverImage": "./img/doodle/doodleday.gif",
+            "trailer": "",
+            "timeSpent": "10 Days",
+            "role": "Technical Artist",
+            "overview": "&emsp;Nebulicious is a prototype of a casual cooking game with the twist of using two separate movement options to gather ingredients and cook donuts. The project was made for the Society of Play's Hexcode Jam 3, which required us to use a specific color palette named 'Hot Panda'.",
+            "goals": "",
+            "responsibilities": "&emsp;Durign the prototype development of Nebulicious, I was responsible for the shaders, visual effects, setting up the character animations, and simple 3D modeling. <br><br>&emsp;I've started to become more accustomed with Unity's Visual Effects Graph system. I definitely had more flexibility when using shader graphs for the particles, making it easier for myself to customize the look of the effect. With this I feel that I have been a little more creative with what I made and making the things I made a little unique. <br><br>&emsp;I'm happy with how this game turned out, given the 10-day time limit. I plan to continue working on this game, depending on how members of the team feel about it. There are still improvements that I would like to do on the current shaders within the game as well as try to make a shader for a procedurally generated planet to give some detail to it.",
+            "retrospect": "",
+            "engine": "Unity",
+            "tools": "C#, Shader Graph, Blender, Visual Effects Graph",
+            "link":"",
+            "imageGallery":[
+                {
+                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_title.png",
+                    "subtitle": "Menu Screen"                    
+                },
+                {
+                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/nebulicious.gif",
+                    "subtitle": "Gameplay"
+                },
+                {
+                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_sceneView.png",
+                    "subtitle": "Game scene setup"
+                },
+                {
+                    "url":"./img/vfx/rocketsmoke.gif",
+                    "subtitle": "Rocket smoke VFX"
+                },
+                {
+                    "url":"./img/vfx/greasebubble.gif",
+                    "subtitle":"Grease plane & bubbles"            
                 }
             ]
         },
