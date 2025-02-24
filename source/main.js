@@ -5,9 +5,15 @@ let featureSection = document.querySelector(".feature");
 
 let predefProject;
 
-if (url.includes("project=")) {
-    let sstring = url.substring(url.indexOf("=") + 1);
-    predefProject = sstring.split("%20").join(' ');
+// if (url.includes("project=")) {
+//     let sstring = url.substring(url.indexOf("=") + 1);
+//     predefProject = sstring.split("%20").join(' ');
+// }
+document.getElementById("hamburger-icon").addEventListener("click", toggleMenu);
+
+export function toggleMenu(){
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("active"); // Toggle the 'active' class
 }
 
 export function loadData()
