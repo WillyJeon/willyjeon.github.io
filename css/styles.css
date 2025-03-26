@@ -330,14 +330,24 @@ nav{
 }
 
 @media (max-width: 500px){
+    #navbar{
+        position: relative;
+    }
+    #job-title{
+        display: none;
+    }
     #hamburger-icon {
         display: block;
-        margin: auto;
+        position: absolute;
+        right: 3%; /* Replace with the desired spacing from the right edge */
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
     }
     #navbar h1{
         width: 40%;
         color: #cfcfcf;
-        font-size: 20px;
+        font-size: 24px;
         padding-left: 3%;
     }
      
@@ -391,4 +401,49 @@ nav{
         opacity: 1;
         border-radius: 5px;
     }
+
+    #resume{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        margin-top: 5%;
+        background-color: #cfcfcf;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        height: 10%;
+        flex-direction: row;
+    }
+    footer li{
+        list-style-type: none;
+        color: black;
+        width: 100%;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+    footer nav a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+    footer a:link{
+        color: black;
+    }
+    footer a:visited{
+        color: black;
+    }
+    footer a:hover{
+        color: black;
+    }
+    footer img{
+        margin-right: 5px;
+        width: 40px;
+        mix-blend-mode: multiply;
+        
+    } 
 }
