@@ -333,9 +333,6 @@ nav{
     #navbar{
         position: relative;
     }
-    #job-title{
-        display: none;
-    }
     #hamburger-icon {
         display: block;
         position: absolute;
