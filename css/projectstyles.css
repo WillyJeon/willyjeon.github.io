@@ -7,11 +7,15 @@ p{
 .project-details{
     padding-top: 8%;
     padding-bottom: 6%;
+    
 }
 .project-text{
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    
+
 }
 
 .project-name{
@@ -129,5 +133,21 @@ p{
 }
 .document-link:link{
     color:black;
+}
+
+@media (max-width: 500px){
+    .project-desc{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery{
+        grid-column: 1;
+        grid-row-start: 6;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
 }
 

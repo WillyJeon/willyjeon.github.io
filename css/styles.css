@@ -14,6 +14,7 @@ body{
     background-color: #000000;
 }
 #navbar h1{
+    width: 100%;
     padding-left: 5%;
     color: #cfcfcf;
 }
@@ -21,9 +22,8 @@ body{
 #navbar h2{
     color: #cfcfcf;
     margin:auto;
-    margin-left: 3%;
-    margin-right: 0;
-   
+    margin-left: 8%;
+    margin-right: 2%;
 }
 
 #hamburger-icon {
@@ -36,7 +36,9 @@ body{
 #nav-links{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     width: 100%;
+    margin-right: 5%;
     background-color: #000000;
 }
 /* Links */
@@ -404,6 +406,8 @@ nav{
         margin-right: auto;
         width: 100%;
     }
+
+    
 
     footer{
         display: flex;

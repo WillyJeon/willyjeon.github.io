@@ -94,12 +94,11 @@
             "link":"",
             "imageGallery":[
                 {
-                    "url":"./img/gladiator/swordattack.gif",
-                    "subtitle": "Menu Screen"                    
+                    "url":"./img/gladiator/swordattack.gif"
+                                        
                 },
                 {
-                    "url":"./img/gladiator/backstep.gif",
-                    "subtitle": "Menu Screen"                    
+                    "url":"./img/gladiator/backstep.gif"                  
                 }
             ]
         },{
