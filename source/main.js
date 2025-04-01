@@ -177,28 +177,56 @@ export function loadProjectData(){
             let gallery = document.createElement("div");
             gallery.classList.add("gallery");
             details.appendChild(gallery);
-            for(let i = 0; i < 3;i++){
-                let column = document.createElement("div");
-                column.classList.add("column");
-                gallery.appendChild(column);
+            function populateGallery(){
+                gallery.innerHTML ="";
+
+                let isSmallScreen = window.innerWidth < 501;
+
+                if(isSmallScreen){
+                    let column = document.createElement("div");
+                    gallery.appendChild(column);
+                    column.classList.add("column");
+
+                    images.forEach(image=>{
+                        let container = document.createElement("div");
+                        container.classList.add("imgs");
+
+                        let img = document.createElement("img");
+                        img.setAttribute("src", image.url);
+                        container.appendChild(img);
+
+                        column.appendChild(container);
+                    })
+                }
+                else{
+                    for(let i = 0; i < 3;i++){
+                        let column = document.createElement("div");
+                        column.classList.add("column");
+                        gallery.appendChild(column);
+                    }
+
+                    let columns = document.querySelectorAll(".column");
+                    for(let i = 0; i < images.length;i++){
+                        
+                        let container = document.createElement("div");
+        
+                        let img = document.createElement("img");
+                        
+        
+                        img.setAttribute("src", images[i].url);
+                        
+        
+                        container.classList.add("imgs");
+                        
+                        container.appendChild(img);
+        
+                        columns[i%columns.length].appendChild(container);
+                    }
+                }
             }
-            let columns = document.querySelectorAll(".column");
-            for(let i = 0; i < images.length;i++){
-                
-                let container = document.createElement("div");
-
-                let img = document.createElement("img");
-                
-
-                img.setAttribute("src", images[i].url);
-                
-
-                container.classList.add("imgs");
-                
-                container.appendChild(img);
-
-                columns[i%columns.length].appendChild(container);
-            }
+            populateGallery();
+            window.addEventListener("resize", populateGallery);
+           
         }
     }
     else if(type == "links"){
