@@ -140,6 +140,10 @@ p{
         grid-template-columns: 1fr;
     }
 
+    .column{
+        max-width: 100%;
+    }
+
     .gallery{
         grid-column: 1;
         grid-row-start: 6;
@@ -148,6 +152,12 @@ p{
         flex-wrap: wrap;
         justify-content: center;
         
+    }
+
+    
+    .gallery img{
+        width: 300px;
+        align-self: center;
     }
 }
 
