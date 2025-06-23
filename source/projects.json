@@ -1,5 +1,5 @@
 {
-    "projects":[
+    "projects": [
         {
             "type": "game",
             "name": "Ninjas On Trampolines",
@@ -9,35 +9,43 @@
             "role": "Technical Artist / Marketing Lead",
             "overview": "&emsp;Ninjas on Trampolines is a physics-based platform fighter where players play as Ninjas that can paint their own colors on the wall. The objective of the game is to have the most of your own color on the back wall by the end of a match, which can be done by smacking other players or using a spray can to graffiti the background. <br>&emsp;The game features three different game modes: Free-for-All, Spray King, and Paintball. Each gamemode takes a twist on the simple, yet extremely captivating game loop of Free-for-All by introducing new objectives for players. Paintball has players chase a soccer ball-like object, while Spray King has players chase another player holding an item that gives them an advantage.",
             "goals": "",
-            "responsibilities": "&emsp;During the first few months of development, my main priority was to get a working paint system and refining it to be more visually pleasing. There were other minor tasks as setting up the basic movement system, animations, and UI. <br><br>&emsp;For the initial paint shader I followed two videos on their take of Splatoon's paint effect, taking notes on how they setup a system using both shader code and graph to setup a basic mask over any texture that they would want to get painted. After getting an inital version of the paint done, players would be able to get their paint onto the background with circles being shown where they killed an opponenet. After showing off the game a suggestion that we took was to make the paint be based off velocity which would make the paint seem more dynamic as the shape and length would be different for each kill. By the end of the 3rd milestone I had implemented and worked on basic scene transitions of a fade in/out, sound effects, music, and a small edits to the paint shader.<br><br>&emsp;After the third milestone I would further work on the paint shader making slight improvements from its initial version by adding the use of premade textures, as well as changing the look of the velocity based paint, by scaling the texture according to the speed of the attack instead of painting multiple versions of the splatter onto the background. This also helped with lowering the amount of draw calls that would be made to the GPU which would noticeably lower the framerate of the game. <br><br>&emsp;I had also started to work on implementing a basic post process shader to aid players that may have forms of color blindness. While the shader is still a work in progress, there is a filter for the three most common types being protanopia, tritanopia, and deuteranopia. There are still some small things that need to be addressed with some colors being too close together. Since there are eight colors available to the players to use so there will be an issue with some colors being too similar to each other. I tried addressing this by adding a contrast filter to try and make the difference betweent the colors even greater and adding a pattern filter so that there are three different patterns that get layered on top of certain player's paint to give it some extra texture. While these are not ''perfect'', it is something that the team has come to acknowledge, so that if someone who would like to play our game has color blindness, this filter would help in differentiating the colros for the player. <br><br>&emsp;There have been some more recent changes since January 2025. Starting with movement for the game, players felt that there was a lack of movement while they were in the air. Taking this into account an air dash was added, allowing the player to do a quick dash while moving in the air. ",
+            "responsibilities": "&emsp;During the first few months of development, my main priority was to get a working paint system and refining it to be more visually pleasing. There were other minor tasks as setting up the basic movement system, animations, and UI. <br><br>&emsp;For the initial paint shader I followed two videos on their take of Splatoon's paint effect, taking notes on how they setup a system using both shader code and graph to setup a basic mask over any texture that they would want to get painted. After getting an inital version of the paint done, players would be able to get their paint onto the background with circles being shown where they killed an opponenet. After showing off the game a suggestion that we took was to make the paint be based off velocity which would make the paint seem more dynamic as the shape and length would be different for each kill. By the end of the 3rd milestone I had implemented and worked on basic scene transitions of a fade in/out, sound effects, music, and a small edits to the paint shader.<br><br>&emsp;After the third milestone I would further work on the paint shader making slight improvements from its initial version by adding the use of premade textures, as well as changing the look of the velocity based paint, by scaling the texture according to the speed of the attack instead of painting multiple versions of the splatter onto the background. This also helped with lowering the amount of draw calls that would be made to the GPU which would noticeably lower the framerate of the game. <br><br>&emsp;I had also started to work on implementing a basic post process shader to aid players that may have forms of color blindness. While the shader is still a work in progress, there is a filter for the three most common types being protanopia, tritanopia, and deuteranopia. There are still some small things that need to be addressed with some colors being too close together. Since there are eight colors available to the players to use so there will be an issue with some colors being too similar to each other. I tried addressing this by adding a contrast filter to try and make the difference betweent the colors even greater and adding a pattern filter so that there are three different patterns that get layered on top of certain player's paint to give it some extra texture. While these are not ''perfect'', it is something that the team has come to acknowledge, so that if someone who would like to play our game has color blindness, this filter would help in differentiating the colros for the player. <br><br>&emsp;There have been some more recent changes since January 2025. Starting with movement for the game, players felt that there was a lack of movement while they were in the air. Taking this into account an air dash was added, allowing the player to do a quick dash while moving in the air. <br><br>&emsp;UPDATE: I made an adjustment to the equation for the color filter effect which change how the colors look in each different filter. In addition to that adjustment I also added a color shift setting to allow the player to adjust the filter to their liking. This was done to help with the issue of some colors being too close together. While the filter isn't perfect yet, I feel that it is one step closer to being a more effective filter for players with color blindness.",
             "retrospect": "",
             "engine": "Unity",
             "tools": "C#, HLSL, Shader Graph, Visual Effects Graph",
-            "link":"",
-            "imageGallery":[
+            "link": "",
+            "imageGallery": [
                 {
-                    "url":"./img/Ninjas_Logo_Tranparent.png",
-                    "subtitle":"Logo"
+                    "url": "./img/Ninjas_Logo_Tranparent.png",
+                    "subtitle": "Logo"
                 },
                 {
-                    "url":"./img/ninjas/ninjas-gameplay.gif",
-                    "subtitle":"Gameplay"
+                    "url": "./img/ninjas/ninjas-gameplay.gif",
+                    "subtitle": "Gameplay"
                 },
                 {
-                    "url":"./img/ninjas/firstpaint.gif",
-                    "subtitle":"First iteration of paint shader"
+                    "url": "./img/ninjas/firstpaint.gif",
+                    "subtitle": "First iteration of paint shader"
                 },
                 {
-                    "url":"./img/ninjas/secondpaint.gif",
-                    "subtitle":"Second iteration of paint shader"
+                    "url": "./img/ninjas/secondpaint.gif",
+                    "subtitle": "Second iteration of paint shader"
                 },
                 {
-                    "url":"./img/ninjas/currentpaint.gif",
-                    "subtitle":"Current iteration of paint shader"
+                    "url": "./img/ninjas/currentpaint.gif",
+                    "subtitle": "Current iteration of paint shader"
                 },
                 {
-                    "url":"./img/ninjas/colorfilter.gif",
-                    "subtitle":"Color filter for the 8 player colors"
+                    "url": "./img/ninjas/colorfilter.gif",
+                    "subtitle": "Color filter for the 8 player colors"
+                },
+                {
+                    "url": "./img/ninjas/updatedcolorfilter.gif",
+                    "subtitle": "Current iteration of color filter"
+                },
+                {
+                    "url": "./img/ninjas/colorshift.gif",
+                    "subtitle": "Color shift effect"
                 }
             ]
         },
@@ -54,27 +62,27 @@
             "retrospect": "",
             "engine": "Unity",
             "tools": "C#, Shader Graph, Blender, Visual Effects Graph",
-            "link":"",
-            "imageGallery":[
+            "link": "",
+            "imageGallery": [
                 {
-                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_title.png",
-                    "subtitle": "Menu Screen"                    
+                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_title.png",
+                    "subtitle": "Menu Screen"
                 },
                 {
-                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/nebulicious.gif",
+                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/nebulicious.gif",
                     "subtitle": "Gameplay"
                 },
                 {
-                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_sceneView.png",
+                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_sceneView.png",
                     "subtitle": "Game scene setup"
                 },
                 {
-                    "url":"./img/vfx/rocketsmoke.gif",
+                    "url": "./img/vfx/rocketsmoke.gif",
                     "subtitle": "Rocket smoke VFX"
                 },
                 {
-                    "url":"./img/vfx/greasebubble.gif",
-                    "subtitle":"Grease plane & bubbles"            
+                    "url": "./img/vfx/greasebubble.gif",
+                    "subtitle": "Grease plane & bubbles"
                 }
             ]
         },
@@ -87,21 +95,21 @@
             "role": "",
             "overview": "&emsp;Project: Gladiator is a two-player co-op game that pits players against each other in intense 2v2 combat. Teams must rely on communication and synergy to emerge victorious and survive the brutal arena battles. Matches bring four duos into a Colosseum-inspired setting, capturing the grandeur and intensity of ancient gladiatorial contests. <br>&emsp;Drawing inspiration from the movie Gladiator, the game introduces a unique mechanic influenced by Chained Together and Bred & Fred, combined with the deliberate combat style of Souls-like games such as Elden Ring and Dark Souls. <br>&emsp;Players are tethered to their partners, restricting movement to within a fixed range. This constraint applies to all actions, including backstepping and rolling, emphasizing coordination between teammates. Combat unfolds from a third-person perspective, featuring light and heavy attacks, as well as intricate combos, all designed to deliver a visceral and rewarding experience. <br>&emsp;Project: Gladiator challenges players to master the art of cooperation while embracing the high-stakes tension of the arena.",
             "goals": "",
-            "responsibilities": "&emsp;I am the sole developer of Project: Gladiator. The combat system is heavily inspired by Souls-like games because I have always admired the deliberate, tactical feel of their combat. However, I wanted to create something that emphasizes cooperation, which is why I introduced the chain mechanic tethering players together. This feature forces players to rely on each other, creating a uniquely challenging and rewarding co-op experience. <br>&emsp;I envisioned the gameplay to reflect the tension and stakes of gladiatorial combat, much like Maximus's first fight in Gladiator. That scene left a lasting impression on me, and I wanted to capture its raw energy and life-or-death intensity within the game. Each match begins with players starting in different parts of the arena, with only the last surviving team emerging victorious. <br>&emsp;Co-op games like It Takes Two, Chained Together, and Bread and Fred inspired me because of how engaging they are for players and spectators alike. I noticed how these games often generate moments of stress, frustration, and teamwork that are both entertaining to play and fun to watch. Seeing content creators share their experiences with these games influenced my decision to incorporate similar dynamics into Project: Gladiator. <br>&emsp;This game is my way of combining everything I love about challenging combat, cooperative gameplay, and the emotional highs and lows that make these experiences memorable.", 
+            "responsibilities": "&emsp;I am the sole developer of Project: Gladiator. The combat system is heavily inspired by Souls-like games because I have always admired the deliberate, tactical feel of their combat. However, I wanted to create something that emphasizes cooperation, which is why I introduced the chain mechanic tethering players together. This feature forces players to rely on each other, creating a uniquely challenging and rewarding co-op experience. <br>&emsp;I envisioned the gameplay to reflect the tension and stakes of gladiatorial combat, much like Maximus's first fight in Gladiator. That scene left a lasting impression on me, and I wanted to capture its raw energy and life-or-death intensity within the game. Each match begins with players starting in different parts of the arena, with only the last surviving team emerging victorious. <br>&emsp;Co-op games like It Takes Two, Chained Together, and Bread and Fred inspired me because of how engaging they are for players and spectators alike. I noticed how these games often generate moments of stress, frustration, and teamwork that are both entertaining to play and fun to watch. Seeing content creators share their experiences with these games influenced my decision to incorporate similar dynamics into Project: Gladiator. <br>&emsp;This game is my way of combining everything I love about challenging combat, cooperative gameplay, and the emotional highs and lows that make these experiences memorable.",
             "retrospect": "",
             "engine": "Unity",
             "tools": "C#, Shader Graph, Visual Effects Graph",
-            "link":"",
-            "imageGallery":[
+            "link": "",
+            "imageGallery": [
                 {
-                    "url":"./img/gladiator/swordattack.gif"
-                                        
+                    "url": "./img/gladiator/swordattack.gif"
                 },
                 {
-                    "url":"./img/gladiator/backstep.gif"                  
+                    "url": "./img/gladiator/backstep.gif"
                 }
             ]
-        },{
+        },
+        {
             "type": "game",
             "name": "Doodle Day",
             "coverImage": "./img/doodle/doodleday.gif",
@@ -114,27 +122,27 @@
             "retrospect": "",
             "engine": "Unity",
             "tools": "C#, Shader Graph, Blender, Visual Effects Graph",
-            "link":"",
-            "imageGallery":[
+            "link": "",
+            "imageGallery": [
                 {
-                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_title.png",
-                    "subtitle": "Menu Screen"                    
+                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_title.png",
+                    "subtitle": "Menu Screen"
                 },
                 {
-                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/nebulicious.gif",
+                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/nebulicious.gif",
                     "subtitle": "Gameplay"
                 },
                 {
-                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_sceneView.png",
+                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_sceneView.png",
                     "subtitle": "Game scene setup"
                 },
                 {
-                    "url":"./img/vfx/rocketsmoke.gif",
+                    "url": "./img/vfx/rocketsmoke.gif",
                     "subtitle": "Rocket smoke VFX"
                 },
                 {
-                    "url":"./img/vfx/greasebubble.gif",
-                    "subtitle":"Grease plane & bubbles"            
+                    "url": "./img/vfx/greasebubble.gif",
+                    "subtitle": "Grease plane & bubbles"
                 }
             ]
         },
@@ -151,27 +159,27 @@
             "retrospect": "",
             "engine": "",
             "tools": "Figma",
-            "link":"",
-            "imageGallery":[
+            "link": "",
+            "imageGallery": [
                 {
-                    "url":"https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/olympussite/olympussite_mockup.png",
-                    "subtitle":"Landing Page and Project"
+                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/olympussite/olympussite_mockup.png",
+                    "subtitle": "Landing Page and Project"
                 },
                 {
-                    "url":"./img/olym/team.png",
-                    "subtitle":"Team Section"
+                    "url": "./img/olym/team.png",
+                    "subtitle": "Team Section"
                 },
                 {
-                    "url":"./img/olym/services.png",
-                    "subtitle":"Servies Section"
+                    "url": "./img/olym/services.png",
+                    "subtitle": "Servies Section"
                 },
                 {
-                    "url":"./img/olym/aboutus.png",
-                    "subtitle":"About Us Section"
+                    "url": "./img/olym/aboutus.png",
+                    "subtitle": "About Us Section"
                 },
                 {
-                    "url":"./img/olym/contact.png",
-                    "subtitle":"Contact and Footer Section"
+                    "url": "./img/olym/contact.png",
+                    "subtitle": "Contact and Footer Section"
                 }
             ]
         },
@@ -185,28 +193,26 @@
             "goals": "",
             "responsibilities": "",
             "retrospect": "",
-            "link":"",
-            "imageGallery":[
+            "link": "",
+            "imageGallery": [
                 {
-                    "url":"./img/vfx/slashnew.gif"
+                    "url": "./img/vfx/slashnew.gif"
                 },
                 {
-                    "url":"./img/vfx/stylizedexplosion.gif"
+                    "url": "./img/vfx/stylizedexplosion.gif"
                 },
                 {
-                    "url":"./img/vfx/kamehameha.gif"                    
+                    "url": "./img/vfx/kamehameha.gif"
                 },
                 {
-                    "url":"./img/vfx/rocketsmoke.gif"
+                    "url": "./img/vfx/rocketsmoke.gif"
                 },
                 {
-                    "url":"./img/vfx/fracture.gif"                    
+                    "url": "./img/vfx/fracture.gif"
                 },
                 {
-                    "url":"./img/vfx/greasebubble.gif"                    
+                    "url": "./img/vfx/greasebubble.gif"
                 }
-               
-               
             ]
         },
         {
@@ -219,31 +225,30 @@
             "goals": "",
             "responsibilities": "",
             "retrospect": "",
-            "link":"",
-            "imageGallery":[
+            "link": "",
+            "imageGallery": [
                 {
-                    "url":"./img/shaders/auroraborealis.gif"
+                    "url": "./img/shaders/auroraborealis.gif"
                 },
                 {
-                    "url":"./img/shaders/cel-shading.gif"
+                    "url": "./img/shaders/cel-shading.gif"
                 },
                 {
-                    "url":"./img/shaders/spaceskybox.png"                    
+                    "url": "./img/shaders/spaceskybox.png"
                 },
                 {
-                    "url":"./img/shaders/daynightskybox.gif"                    
+                    "url": "./img/shaders/daynightskybox.gif"
                 },
                 {
-                    "url":"./img/watershaders/water.gif"
+                    "url": "./img/watershaders/water.gif"
                 },
                 {
-                    "url":"./img/watershaders/ocean.gif"
-                }                    
-               
+                    "url": "./img/watershaders/ocean.gif"
+                }
             ]
         },
         {
-            "type" : "links",
+            "type": "links",
             "name": "Game Design Documents",
             "coverImage": "./img/document.png",
             "trailer": "",
@@ -252,39 +257,45 @@
             "goals": "",
             "responsibilities": "",
             "retrospect": "",
-            "links":[
+            "links": [
                 {
-                    "title" :"PROJECT: Gladiator Design Document",
-                    "date" : "Sept 2024 - Present",
-                    "link" : "https://docs.google.com/document/d/1JScY-xs7dM5bUklUMA1yvLFyu49hAWLyfzrCwvNkT4s/edit?usp=sharing"
+                    "title": "PROJECT: Gladiator Design Document",
+                    "date": "Sept 2024 - Present",
+                    "bio": "A arena stlye combat game that pits players against each other while attached to their partner. Players must work together to defeat the other teams.",
+                    "link": "https://docs.google.com/document/d/1JScY-xs7dM5bUklUMA1yvLFyu49hAWLyfzrCwvNkT4s/edit?usp=sharing"
                 },
                 {
-                    "title" :"Ninjas on Trampolines Design Document",
-                    "date" : "Sept 2023 - Present",
-                    "link" : "https://docs.google.com/document/d/1VzbaXHNuhw9445c2Qm5PXf4R0Jn5yNRlm7IDgVhKtI4/edit?usp=sharing"
+                    "title": "Ninjas on Trampolines Design Document",
+                    "date": "Sept 2023 - Present",
+                    "bio": "A 2D platform fighter where players play as Ninjas that can paint their own colors on the wall. The objective of the game is to have the most of your own color on the back wall by the end of a match, which can be done by smacking other players or using a spray can to graffiti the background.",
+                    "link": "https://docs.google.com/document/d/1VzbaXHNuhw9445c2Qm5PXf4R0Jn5yNRlm7IDgVhKtI4/edit?usp=sharing"
                 },
                 {
-                    "title" :"Gate Crash Design Document",
-                    "date" : "Dec 2022 - Present",
-                    "link" : "https://docs.google.com/document/d/1IjDalesYixSGFHQ4QxXLbGa-aZ6wMr9p-DpiheLY6rM/edit?usp=sharing"
+                    "title": "Gate Crash Design Document",
+                    "date": "Dec 2022 - Present",
+                    "bio": "",
+                    "link": "https://docs.google.com/document/d/1IjDalesYixSGFHQ4QxXLbGa-aZ6wMr9p-DpiheLY6rM/edit?usp=sharing"
                 },
                 {
-                    "title" :"Nebulicious Design Document",
-                    "date" : "2 Weeks",
-                    "link" : "https://docs.google.com/document/d/1Ek1YsNrmnBxao7xPV4B0l6KNCt-yG7aMEzFaVddeYqg/edit?usp=sharing"
+                    "title": "Nebulicious Design Document",
+                    "date": "2 Weeks",
+                    "bio": "",
+                    "link": "https://docs.google.com/document/d/1Ek1YsNrmnBxao7xPV4B0l6KNCt-yG7aMEzFaVddeYqg/edit?usp=sharing"
                 },
                 {
-                    "title" :"Helpless Design Document",
-                    "date" : "2 Weeks",
-                    "link" : "https://docs.google.com/document/d/18OGNfsIwT99Oo75fd28T4Td8Qt6gd3dOsU3-HkybI4U/edit?usp=sharing"
+                    "title": "Helpless Design Document",
+                    "date": "2 Weeks",
+                    "bio": "",
+                    "link": "https://docs.google.com/document/d/18OGNfsIwT99Oo75fd28T4Td8Qt6gd3dOsU3-HkybI4U/edit?usp=sharing"
                 },
                 {
-                    "title" :"Changeling VR Technical Art Documentation",
-                    "date" : "May 2023 - Aug 2023",
-                    "link" : "https://docs.google.com/document/d/1E7ptMnWlWz28l1a6cuzR2rM1qOa7uT93ywZbXIzBtXM/edit?usp=sharing"
+                    "title": "Changeling VR Technical Art Documentation",
+                    "date": "May 2023 - Aug 2023",
+                    "bio": "",
+                    "link": "https://docs.google.com/document/d/1E7ptMnWlWz28l1a6cuzR2rM1qOa7uT93ywZbXIzBtXM/edit?usp=sharing"
                 }
             ],
-            "imageGallery":""
+            "imageGallery": ""
         }
     ]
 }

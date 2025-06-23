@@ -248,11 +248,15 @@ export function loadProjectData(){
                 let container = document.createElement("div");
                 let title = document.createElement("h1");
                 let date = document.createElement("h1");
+                let bio = document.createElement("p");
                 let link = document.createElement("a");
                 title.innerHTML = links[i].title;
 
                 date.classList.add("work-date");
                 date.innerHTML = links[i].date;
+                
+                bio.classList.add("work-bio");
+                bio.innerHTML = links[i].bio;
 
                 link.classList.add("document-link");
                 link.target = "blank";
@@ -261,6 +265,7 @@ export function loadProjectData(){
 
                 container.appendChild(title);
                 container.appendChild(date);
+                container.appendChild(bio);
                 container.appendChild(link);
                 encompass.appendChild(container);
             }
