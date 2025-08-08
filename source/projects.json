@@ -85,6 +85,31 @@
                     "subtitle": "Grease plane & bubbles"
                 }
             ]
+        }, 
+        {
+            "type": "game",
+            "name": "Wranglin'",
+            "coverImage": "./img/wranglin/mainpage.gif",
+            "trailer": "",
+            "timeSpent": "3 Days",
+            "role": "Technical Artist",
+            "overview": "&emsp;Wranglin' is a 3D single player game. Where the player has a lasso that loops around animals to wrangle them into their correct pens. The game was made for the Game Maker's Toolkit 2025 Game Jam with the theme being loop.",
+            "goals": "",
+            "responsibilities": "&emsp;I am one of three people on the team. I was responsible for the visual effects, shaders, and some lighting. For the explosion visual effect I used Unity's built in particle system. This was due to our goal for having the game available on WebGL which would not support Visual Effects Graph since that is still not usuable in the Built-In pipeline. <br><br>&emsp;For the shaders I used Unity's Shader Graph to create a skybox shader to move away from match the rest of the art style of the game. I also made a small shader for our dynamite object to give it a pattern similar to that of the cows so that it looks similar and if a player is not paying attention they will lasso a dynamite onto themselves and get stunned. With our crunch time we decided to import all the models such as the farm assets and animals from the Unity Asset Store to save time. <br><br>&emsp;Overall I am happy with how the game turned out, given the 3-day time limit. I would like to polish the game more by adding animations to the animals and add a player model, currently the player is a plain capsule. I would also like to improve the skybox shader to add a day/night cycle to it to give another visual indicator of time passing in the game.",
+            "retrospect": "",
+            "engine": "Unity",
+            "tools": "C#, Shader Graph",
+            "link": "https://willyjeon.itch.io/wranglin",
+            "imageGallery": [
+                 {
+                    "url": "./img/wranglin/title.png",
+                    "subtitle": "Title"
+                },
+                {
+                    "url": "./img/wranglin/mainmenu.png",
+                    "subtitle": "Main Menu"
+                }
+            ]
         },
         {
             "type": "game",
