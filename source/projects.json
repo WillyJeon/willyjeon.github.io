@@ -141,7 +141,7 @@
             "trailer": "",
             "timeSpent": "10 Days",
             "role": "Technical Artist",
-            "overview": "&emsp;Nebulicious is a prototype of a casual cooking game with the twist of using two separate movement options to gather ingredients and cook donuts. The project was made for the Society of Play's Hexcode Jam 3, which required us to use a specific color palette named 'Hot Panda'.",
+            "overview": "&emsp;Doodle Day is a simulation made in 24 hours for the Wolfjam Hackathon 2023. THe primary goal of the experience is to use a rubber mallet to defeat aliens that appear on your screen. However, there is a news tab that reveals a darker side of what you are doing.  The game ends as you destory Earth.",
             "goals": "",
             "responsibilities": "&emsp;Durign the prototype development of Nebulicious, I was responsible for the shaders, visual effects, setting up the character animations, and simple 3D modeling. <br><br>&emsp;I've started to become more accustomed with Unity's Visual Effects Graph system. I definitely had more flexibility when using shader graphs for the particles, making it easier for myself to customize the look of the effect. With this I feel that I have been a little more creative with what I made and making the things I made a little unique. <br><br>&emsp;I'm happy with how this game turned out, given the 10-day time limit. I plan to continue working on this game, depending on how members of the team feel about it. There are still improvements that I would like to do on the current shaders within the game as well as try to make a shader for a procedurally generated planet to give some detail to it.",
             "retrospect": "",
@@ -150,24 +150,24 @@
             "link": "",
             "imageGallery": [
                 {
-                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_title.png",
-                    "subtitle": "Menu Screen"
+                    "url": "./img/doodle/doodleday-1.png",
+                    "subtitle": "Title"
                 },
                 {
-                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/nebulicious.gif",
+                    "url": "./img/doodle/doodleday-4.png",
+                    "subtitle": "News Tab"
+                },
+                {
+                    "url": "./img/doodle/doodleday-2.png",
                     "subtitle": "Gameplay"
                 },
                 {
-                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_sceneView.png",
-                    "subtitle": "Game scene setup"
+                    "url": "./img/doodle/team.jpg",
+                    "subtitle": "Team at Wolfjaw Studios"
                 },
                 {
-                    "url": "./img/vfx/rocketsmoke.gif",
-                    "subtitle": "Rocket smoke VFX"
-                },
-                {
-                    "url": "./img/vfx/greasebubble.gif",
-                    "subtitle": "Grease plane & bubbles"
+                    "url": "./img/doodle/board.jpg",
+                    "subtitle": "Planning Board"
                 }
             ]
         },

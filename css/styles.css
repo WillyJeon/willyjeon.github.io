@@ -292,7 +292,7 @@ footer{
     height: 10%;
     flex-direction: row;
 }
-footer li{
+footer nav li{
     list-style-type: none;
     color: black;
     width: 100%;
@@ -315,10 +315,8 @@ footer a:hover{
     color: black;
 }
 footer img{
-    margin-right: 5px;
     width: 40px;
     mix-blend-mode: multiply;
-    
 } 
 
 nav{
@@ -328,7 +326,6 @@ nav{
     list-style: none;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 @media (max-width: 500px){
