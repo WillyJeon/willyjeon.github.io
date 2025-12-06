@@ -143,7 +143,7 @@
             "role": "Technical Artist",
             "overview": "&emsp;Doodle Day is a simulation made in 24 hours for the Wolfjam Hackathon 2023. THe primary goal of the experience is to use a rubber mallet to defeat aliens that appear on your screen. However, there is a news tab that reveals a darker side of what you are doing.  The game ends as you destory Earth.",
             "goals": "",
-            "responsibilities": "&emsp;Durign the prototype development of Nebulicious, I was responsible for the shaders, visual effects, setting up the character animations, and simple 3D modeling. <br><br>&emsp;I've started to become more accustomed with Unity's Visual Effects Graph system. I definitely had more flexibility when using shader graphs for the particles, making it easier for myself to customize the look of the effect. With this I feel that I have been a little more creative with what I made and making the things I made a little unique. <br><br>&emsp;I'm happy with how this game turned out, given the 10-day time limit. I plan to continue working on this game, depending on how members of the team feel about it. There are still improvements that I would like to do on the current shaders within the game as well as try to make a shader for a procedurally generated planet to give some detail to it.",
+            "responsibilities": "",
             "retrospect": "",
             "engine": "Unity",
             "tools": "C#, Shader Graph, Blender, Visual Effects Graph",
