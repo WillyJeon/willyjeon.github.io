@@ -116,7 +116,7 @@
             "name": "PROJECT: Gladiator",
             "coverImage": "./img/gladiator/swordattack.gif",
             "trailer": "",
-            "timeSpent": "September 2024 - Present",
+            "timeSpent": "September 2024 - Present (ON BREAK)",
             "role": "",
             "overview": "&emsp;Project: Gladiator is a two-player co-op game that pits players against each other in intense 2v2 combat. Teams must rely on communication and synergy to emerge victorious and survive the brutal arena battles. Matches bring four duos into a Colosseum-inspired setting, capturing the grandeur and intensity of ancient gladiatorial contests. <br>&emsp;Drawing inspiration from the movie Gladiator, the game introduces a unique mechanic influenced by Chained Together and Bred & Fred, combined with the deliberate combat style of Souls-like games such as Elden Ring and Dark Souls. <br>&emsp;Players are tethered to their partners, restricting movement to within a fixed range. This constraint applies to all actions, including backstepping and rolling, emphasizing coordination between teammates. Combat unfolds from a third-person perspective, featuring light and heavy attacks, as well as intricate combos, all designed to deliver a visceral and rewarding experience. <br>&emsp;Project: Gladiator challenges players to master the art of cooperation while embracing the high-stakes tension of the arena.",
             "goals": "",
@@ -131,6 +131,31 @@
                 },
                 {
                     "url": "./img/gladiator/backstep.gif"
+                }
+            ]
+        }, 
+        {
+            "type": "game",
+            "name": "Untitled Blacksmith Game",
+            "coverImage": "./img/blacksmith/blacksmith.gif",
+            "trailer": "",
+            "timeSpent": "December 2025 - Present",
+            "role": "Sole Developer",
+            "overview": "&emsp;This blacksmith game is a simple co-op friendslop game where you and your friends start off in a blacksmith shop and you have to complete orders in order to gain money and keep the shop running. As you progress through the game you will be able to upgrade your shop, unlock new ores, and new recipes that you can sell to your customers. This draws inspiration form the wave of friendslop co-op games like Peak and Lethal Company.",
+            "goals": "&emsp;My goal for this game is to develop my skills in 3D modeling and game design. I want to create a fun and engaging game that my friends and I can play together.",
+            "responsibilities": "",
+            "retrospect": "",
+            "engine": "Unity",
+            "tools": "C#, Shader Graph, Blender, Visual Effects Graph",
+            "link": "https://www.youtube.com/@BillyBonkDev",
+            "imageGallery": [
+                {
+                    "url": "./img/blacksmith/explosion.gif",
+                    "subtitle": "Explosion VFX"
+                },
+                {
+                    "url": "./img/blacksmith/products.png",
+                    "subtitle": "Products"
                 }
             ]
         },

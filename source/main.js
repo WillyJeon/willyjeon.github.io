@@ -51,6 +51,7 @@ export function loadProjectData(){
     let engine = project.engine;
     let tools = project.tools;
     let responsibilities = project.responsibilities;
+    let link = project.link;
     let links = project.links;
     
     document.querySelector(".project-name").textContent = name;
@@ -114,6 +115,16 @@ export function loadProjectData(){
             let timeText = document.createElement("p");
             timeText.innerHTML = timeline;
             container.appendChild(timeText);
+            parent.appendChild(container);
+        }
+        if(link){
+            let container = document.createElement("div");
+            container.classList.add("subTitle");
+            let linkText = document.createElement("a");
+            linkText.href = link;
+            linkText.target = "blank";
+            linkText.innerHTML = "Link to Game/Youtube";
+            container.appendChild(linkText);
             parent.appendChild(container);
         }
         

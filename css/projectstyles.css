@@ -13,9 +13,6 @@ p{
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-    
-
 }
 
 .project-name{
@@ -28,6 +25,7 @@ p{
     font-size: larger;
     margin: 1% 10%;
 }
+
 .parent-text{
     grid-row-start: 1;
     grid-row-end: 5;
@@ -55,6 +53,13 @@ p{
     margin-left: 10px;
     font-size: 22px;
 }
+
+.subTitle a{
+    color: #1E1E1E;
+    margin: auto;
+    font-size: larger;
+}
+
 .responsibility{
     grid-column: 1;
     margin-right: 3%;
