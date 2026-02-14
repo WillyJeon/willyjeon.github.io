@@ -170,6 +170,7 @@ export function loadProjectData(){
     
                 columns[i%columns.length].appendChild(container);
             }
+            
             body.appendChild(gallery);
         }
 
