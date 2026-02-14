@@ -1,0 +1,14 @@
+.dealerHand, .hand{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.card{
+    width:200px;
+
+}
+
+.card img{
+   width: 200px;
+}
