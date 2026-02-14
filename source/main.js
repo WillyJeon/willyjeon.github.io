@@ -46,6 +46,7 @@ export function loadProjectData(){
     let name = project.name;
     let desc = project.overview;
     let images = project.imageGallery;
+    let videos = project.videos;
     let role = project.role;
     let timeline = project.timeSpent;
     let engine = project.engine;
@@ -171,6 +172,45 @@ export function loadProjectData(){
             }
             body.appendChild(gallery);
         }
+
+        if(videos){
+            let gallery = document.createElement("div");
+            gallery.classList.add("gallery");
+            details.appendChild(gallery);
+
+            let column = document.createElement("div");
+            column.classList.add("game-column");
+            gallery.appendChild(column);
+
+            let columns = document.querySelectorAll(".game-column");
+            for(let i = 0; i < videos.length;i++){
+                
+                let container = document.createElement("div");
+    
+                let video = document.createElement("iframe");
+                video.width = "225";
+                video.height = "408";
+                video.frameborder = "0";
+                video.referrerpolicy = "strict-origin-when-cross-origin";
+                video.allowfullscreen = true;
+                
+                video.setAttribute("src", videos[i].url);
+                container.classList.add("imgs");
+                container.appendChild(video);
+
+                if(videos[i].subtitle){
+                    let caption = document.createElement("p");
+                    caption.innerHTML = videos[i].subtitle;
+                    container.appendChild(caption);
+                }
+    
+                columns[i%columns.length].appendChild(container);
+            }
+            body.appendChild(gallery);
+
+        }
+
+        
     }
     else if(type == "showcase"){
         let body = document.createElement("div");

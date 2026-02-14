@@ -142,22 +142,21 @@
             "timeSpent": "December 2025 - Present",
             "role": "Sole Developer",
             "overview": "&emsp;This blacksmith game is a simple co-op friendslop game where you and your friends start off in a blacksmith shop and you have to complete orders in order to gain money and keep the shop running. As you progress through the game you will be able to upgrade your shop, unlock new ores, and new recipes that you can sell to your customers. This draws inspiration form the wave of friendslop co-op games like Peak and Lethal Company.",
-            "goals": "&emsp;My goal for this game is to develop my skills in 3D modeling and game design. I want to create a fun and engaging game that my friends and I can play together.",
+            "goals": "&emsp;My goal for this game is to develop my skills in game developement and design. I want to create a fun and engaging game that my friends and I can play together.",
             "responsibilities": "",
             "retrospect": "",
             "engine": "Unity",
-            "tools": "C#, Shader Graph, Blender, Visual Effects Graph",
-            "link": "https://www.youtube.com/@BillyBonkDev",
-            "imageGallery": [
+            "tools": "C#, Blender, Shader Graph, Visual Effects Graph",
+            "link": "https://www.youtube.com/@BillyBonkDev",        
+            "videos": [
                 {
-                    "url": "./img/blacksmith/explosion.gif",
-                    "subtitle": "Explosion VFX"
+                    "url" : "https://www.youtube.com/embed/VLj11Wgbzvw"
                 },
                 {
-                    "url": "./img/blacksmith/products.png",
-                    "subtitle": "Products"
+                    "url" : "https://www.youtube.com/embed/t24p6YaeBNw"
                 }
             ]
+
         },
         {
             "type": "game",
