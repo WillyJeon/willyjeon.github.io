@@ -141,19 +141,31 @@
             "trailer": "",
             "timeSpent": "December 2025 - Present",
             "role": "Sole Developer",
-            "overview": "&emsp;This blacksmith game is a simple co-op friendslop game where you and your friends start off in a blacksmith shop and you have to complete orders in order to gain money and keep the shop running. As you progress through the game you will be able to upgrade your shop, unlock new ores, and new recipes that you can sell to your customers. This draws inspiration form the wave of friendslop co-op games like Peak and Lethal Company.",
+            "overview": "&emsp;This blacksmith game is a simple co-op friendslop game where you and your friends start off in a blacksmith shop and you have to complete orders in order to gain money and keep the shop running. As you progress through the game you will be able to upgrade your shop, unlock new ores, and new recipes that you can sell to your customers. This draws inspiration from the wave of friendslop co-op games like Peak and Lethal Company.",
             "goals": "&emsp;My goal for this game is to develop my skills in game developement and design. I want to create a fun and engaging game that my friends and I can play together.",
-            "responsibilities": "",
+            "responsibilities": "&emsp;My goal for this game is to develop my skills in game developement and design. I want to create a fun and engaging game that my friends and I can play together. I want to primarily focus on the development side with making a modular system where if I want to add a product, like a halberd, all I would need to do would be add the recipe objects for the final product, and any corresponding recipes for the pieces of the halberd. <br>&emsp;My initial step for this game was to create the basic interaction of picking up items, as that will bethe main action the player will be doing throughout the game. This interaction function will also be used to interacting with levers, buttons, and the shop to buy new recipes and unlock new ores. After that I started to create the stations being the furnace, anvil, chopping block, shop, and assembly station. <br>&emsp; All of these have their own scriptable objects for recipes pertaining to what needs to be put into/onto the station in order to create something from it. For the furnace you can input basic ores like iron ore to make an iron ingot, but with that you can also create steel ingots by putting in a coal ore and iron ore together. The serializable object for the anvil holds information the string name of the input and output objects as well of the prefab for the output in Unity. This is done so that I can save on not needing to create multiple different prefabs for the ingots and other products. This is done with the other serializable objects with the names of the input and out being strings, they mainly used to check for available/correct recipes depending on the input. In my opinion this is the best way I can solve the issue for wanting to add more products in the future without needing to add more prefab variants. <br>&emsp;This is also done in the Unreal Engine version with a slight difference in that I have created unique blueprints for each input and output that are children of the same parent blueprint. In Unreal Engine I utilize data tables with structs, which is what I see as the equivalent to what I have in the Unity version of my lists of serliazable objects. I did find it slightly easier to utilize the data tables with structs in comparison to the serizable objects. However, if I can find a way to just utilize the master ingot blueprint to create instance based variants for each type of ingot I will most likely follow suit with that.",
             "retrospect": "",
-            "engine": "Unity",
+            "engine": "Unity, Unreal Engine 5",
             "tools": "C#, Blender, Shader Graph, Visual Effects Graph",
-            "link": "https://www.youtube.com/@BillyBonkDev",        
+            "link": "https://www.youtube.com/@BillyBonkDev",   
             "videos": [
                 {
                     "url" : "https://www.youtube.com/embed/VLj11Wgbzvw"
                 },
                 {
                     "url" : "https://www.youtube.com/embed/t24p6YaeBNw"
+                }
+            ],
+            "blueprints":[
+                {
+                    "img" : "./img/blacksmith/anvilBlueprint.png",
+                    "url" : "https://blueprintue.com/render/pw9tco2a/",
+                    "blueprint": "Anvil"
+                },
+                {
+                    "img" : "./img/blacksmith/grabbableBlueprint.png",
+                    "url": "https://blueprintue.com/render/oanpyjnw/",
+                    "blueprint": "Grabbable Items"
                 }
             ]
 

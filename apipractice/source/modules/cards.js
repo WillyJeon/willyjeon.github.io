@@ -27,6 +27,12 @@ export async function dealCards(cardCount = 4){
         remaining: data.remaining
     }));
 
+    cards.map(card => {
+        if(card.value === "KING" || card.value === "QUEEN" || card.value === "JACK"){
+            card.value =  10; 
+        }
+    });
+
     return cards;
 }
 

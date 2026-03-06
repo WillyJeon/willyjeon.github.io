@@ -319,6 +319,23 @@ footer img{
     mix-blend-mode: multiply;
 } 
 
+.imgs a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.imgs a:link{
+    color: black;
+}
+.imgs a:visited{
+    color: black;
+}
+.imgs a:hover{
+    color: black;
+}
+
 nav{
     display: flex;
     justify-content: center;

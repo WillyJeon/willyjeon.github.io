@@ -22,7 +22,6 @@ deckButton.addEventListener("click", async () =>{
 });
 
 button.addEventListener("click", async () =>{
-
     clearTable();
     initialCards = false;
     let cardCount = 4;
@@ -36,6 +35,7 @@ hitButton.addEventListener("click", async () =>{
     let cardCount = 1;
     let cards = await dealCards(cardCount);
     cardVisuals(cards);
+    checkHands();
 
 });
 
@@ -51,22 +51,24 @@ function cardVisuals(cards){
         cardContainer.classList.add("card");
         img.src = card.image;
         cardContainer.appendChild(img);
+        
         if(i % 2 != 0){
             document.querySelector(".dealerHand").appendChild(cardContainer);
             dealerValue = getCardValue(card, dealerValue);
+            dealerInfo.innerHTML = `Dealer's Hand: ${dealerValue}`;
         }
         else{
             document.querySelector(".hand").appendChild(cardContainer);
             value = getCardValue(card, value);
+            playerInfo.innerHTML = `Player's Hand: ${value}`;
         }
-
-        
     })
        
     if(dealerValue == 21 && !initialCards)
-        dealerInfo.innerHTML = "Dealer's Hand: Dealer Blackjack!";
+        status.innerHTML = "Dealer Blackjack!";
     else if(value == 21 && !initialCards)
-        playerInfo.innerHTML = "Your Hand: Player Blackjack!";
+        status.innerHTML = "Player Blackjack!";
+
 }
 
 
@@ -81,10 +83,6 @@ function getCardValue(card, cardValue = 0){
                 cardValue += 11;
         }
     }
-    else if(card.value === "KING" || card.value === "QUEEN" || card.value === "JACK")
-    {
-        cardValue += 10;
-    }
     else
     {
         cardValue += parseInt(card.value);
@@ -94,9 +92,6 @@ function getCardValue(card, cardValue = 0){
         cardValue -= 10;
         hasAce = false;
     }
-    if(cardValue > 21){
-        alert("Bust!");
-    }
 
     remaining.innerHTML = `Remaining Cards: ${card.remaining}`;
 
@@ -104,19 +99,19 @@ function getCardValue(card, cardValue = 0){
 }
 
 async function stand(){
-    if(dealerValue < 17){        
+    while(dealerValue < 17){        
         let card = await dealCards(1);
+        console.log(card);
         const cardContainer = document.createElement("div");
         const img = document.createElement("img");
         cardContainer.classList.add("card");
         img.src = card[0].image;
         cardContainer.appendChild(img);
         document.querySelector(".dealerHand").appendChild(cardContainer);
-        dealerValue = getCardValue(card, dealerValue);
+        dealerValue = getCardValue(card[0], dealerValue);
+        dealerInfo.innerHTML = `Dealer's Hand: ${dealerValue}`;
     }
-    else{
-        checkHands();
-    }
+    checkHands();
 }
 
 async function clearTable(){
@@ -126,12 +121,22 @@ async function clearTable(){
     initialCards = false;
     document.querySelector(".dealerHand").replaceChildren();
     document.querySelector(".hand").replaceChildren();
-
+    status.innerHTML = "";  
 }
 
 async function checkHands(){
+    if(dealerValue > 21){
+        status.innerHTML = "DEALER BUSTS, YOU WIN!";
+        return;
+    }
+    if(value > 21){
+        status.innerHTML = "YOU BUST, DEALER WINS!";
+        return;
+    }
     if(dealerValue > value)
         status.innerHTML = "DEALER WINS";
-    else
+    else{
         status.innerHTML = "YOU WIN";
+    }
+        
 }

@@ -47,6 +47,7 @@ export function loadProjectData(){
     let desc = project.overview;
     let images = project.imageGallery;
     let videos = project.videos;
+    let blueprints = project.blueprints;
     let role = project.role;
     let timeline = project.timeSpent;
     let engine = project.engine;
@@ -54,6 +55,7 @@ export function loadProjectData(){
     let responsibilities = project.responsibilities;
     let link = project.link;
     let links = project.links;
+    
     
     document.querySelector(".project-name").textContent = name;
 
@@ -210,8 +212,32 @@ export function loadProjectData(){
             body.appendChild(gallery);
 
         }
+        if(blueprints){
+            
+            let columns = document.querySelectorAll(".game-column");
+            for(let i = 0; i < blueprints.length;i++){
+                
+                let container = document.createElement("div");
+    
+                let img = document.createElement("img");
+                img.width = "225";
+                img.height = "408";
+                
+                img.setAttribute("src", blueprints[i].img);
+                container.classList.add("imgs");
+                //container.appendChild(img);
 
-        
+                let caption = document.createElement("a");
+                caption.appendChild(img);
+                caption.setAttribute("href", blueprints[i].url);
+                caption.setAttribute("target", "_blank");
+                container.appendChild(caption);
+    
+                columns[i%columns.length].appendChild(container);
+            }
+            body.appendChild(gallery);
+
+        }
     }
     else if(type == "showcase"){
         let body = document.createElement("div");
