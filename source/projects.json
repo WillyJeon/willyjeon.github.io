@@ -160,12 +160,12 @@
                 {
                     "img" : "./img/blacksmith/anvilBlueprint.png",
                     "url" : "https://blueprintue.com/render/pw9tco2a/",
-                    "blueprint": "Anvil"
+                    "subtitle": "Anvil"
                 },
                 {
                     "img" : "./img/blacksmith/grabbableBlueprint.png",
                     "url": "https://blueprintue.com/render/oanpyjnw/",
-                    "blueprint": "Grabbable Items"
+                    "subtitle": "Grabbable Items"
                 }
             ]
 

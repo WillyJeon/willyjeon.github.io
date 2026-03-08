@@ -320,7 +320,7 @@ footer img{
 } 
 
 .imgs a {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
     display: flex;
     align-items: center;
@@ -334,6 +334,11 @@ footer img{
 }
 .imgs a:hover{
     color: black;
+}
+
+.imgs a{
+    display: flex;
+    flex-direction: column; 
 }
 
 nav{

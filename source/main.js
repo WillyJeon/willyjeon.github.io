@@ -228,6 +228,7 @@ export function loadProjectData(){
                 //container.appendChild(img);
 
                 let caption = document.createElement("a");
+                caption.innerHTML = blueprints[i].subtitle;
                 caption.appendChild(img);
                 caption.setAttribute("href", blueprints[i].url);
                 caption.setAttribute("target", "_blank");
