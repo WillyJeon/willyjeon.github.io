@@ -340,6 +340,9 @@ footer img{
     display: flex;
     flex-direction: column; 
 }
+.imgs p{
+    text-decoration: underline;
+}
 
 nav{
     display: flex;

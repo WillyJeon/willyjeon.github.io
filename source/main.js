@@ -220,19 +220,40 @@ export function loadProjectData(){
                 let container = document.createElement("div");
     
                 let img = document.createElement("img");
-                img.width = "225";
-                img.height = "408";
+                // img.width = "225";
+                // img.height = "408";
                 
                 img.setAttribute("src", blueprints[i].img);
                 container.classList.add("imgs");
                 //container.appendChild(img);
+                
+               
+                if(blueprints[i].url){
+                    let caption = document.createElement("a");
+                    caption.innerHTML = blueprints[i].subtitle;
+                    caption.setAttribute("href", blueprints[i].url);
 
-                let caption = document.createElement("a");
-                caption.innerHTML = blueprints[i].subtitle;
-                caption.appendChild(img);
-                caption.setAttribute("href", blueprints[i].url);
-                caption.setAttribute("target", "_blank");
-                container.appendChild(caption);
+                    caption.appendChild(img);
+                    caption.setAttribute("href", blueprints[i].url);
+                    caption.setAttribute("target", "_blank");
+                    container.appendChild(caption);
+                }
+                else{
+                    let img = document.createElement("img");
+                
+                    img.setAttribute("src", blueprints[i].img);
+                    container.classList.add("imgs");
+
+                     if(blueprints[i].subtitle){
+                        let caption = document.createElement("p");
+                        caption.innerHTML = blueprints[i].subtitle;
+                        container.appendChild(caption);
+                    }
+
+                    container.appendChild(img);
+                }
+                
+                
     
                 columns[i%columns.length].appendChild(container);
             }

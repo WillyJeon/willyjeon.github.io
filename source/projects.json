@@ -25,14 +25,24 @@
             ],
             "blueprints":[
                 {
-                    "img" : "./img/blacksmith/anvilBlueprint.png",
+                    "img" : "./img/blacksmith/interact.png",
+                    "url" : "https://blueprintue.com/render/z5_gccpm/",
+                    "subtitle": "Interact"
+                },
+                {
+                    "img" : "./img/blacksmith/grabbable.png",
+                    "url": "https://blueprintue.com/render/oanpyjnw/",
+                    "subtitle": "Grabbable Items"
+                },
+                {
+                    "img" : "./img/blacksmith/anvil.png",
                     "url" : "https://blueprintue.com/render/pw9tco2a/",
                     "subtitle": "Anvil"
                 },
                 {
-                    "img" : "./img/blacksmith/grabbableBlueprint.png",
-                    "url": "https://blueprintue.com/render/oanpyjnw/",
-                    "subtitle": "Grabbable Items"
+                    "img" : "./img/blacksmith/dataTable.png",
+                    "url" : "",
+                    "subtitle": "Data Table"
                 }
             ]
 
