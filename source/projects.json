@@ -1,5 +1,42 @@
 {
     "projects": [
+         
+        {
+            "type": "game",
+            "name": "Untitled Blacksmith Game",
+            "coverImage": "./img/blacksmith/blacksmith.gif",
+            "trailer": "",
+            "timeSpent": "December 2025 - Present",
+            "role": "Sole Developer",
+            "overview": "&emsp;This blacksmith game is a simple co-op friendslop game where you and your friends start off in a blacksmith shop and you have to complete orders in order to gain money and keep the shop running. As you progress through the game you will be able to upgrade your shop, unlock new ores, and new recipes that you can sell to your customers. This draws inspiration from the wave of friendslop co-op games like Peak and Lethal Company.",
+            "goals": "&emsp;My goal for this game is to develop my skills in game developement and design. I want to create a fun and engaging game that my friends and I can play together.",
+            "responsibilities": "<h4> Goal </h4>  &emsp;My goal for this game is to develop my skills in game development and design. I want to create a fun and engaging game that my friends and I can play together. Where I can primarily focus on the development side, making a modular system where if I want to add a product, like a halberd, all I would need to do is add the recipe objects for the final product, and any corresponding recipes for the pieces of the halberd. I initially started this projec tin Unity. However, after working in Unity for most of the project, I wanted to widen my skills and decided to shift into making the game in Unreal. I have now spent the last few weeks working on it. I was able to catch up on 2 months of work fairly quickly, as the blueprint system felt fairly intuitive. <h4> Base Interaction Parent </h4>&emsp;The initial step for this game was to create the basic interaction of picking up items, as that will be the main action the player will be doing throughout the game. This interaction function will also be used to interact with levers, buttons, and the shop to buy new recipes and unlock new ores. The player controller contains the Interact function, which sends a blueprint interface message to any blueprint that has the Interact Message Event node. Compared to Unity, it is a lot cleaner setup as there is not an excess of scripts on every object.<h4> Work Stations </h4> &emsp; The anvil, furnace, chopping block, assembly station, and shop all have their own data tables, with them all containing structs. Each one is geared towards what the player can put on/in them, and then looks through the data table to show the player the possible outputs. One version is the assembly station, which will look through what the two input pieces will generate. The anvil will take the ingot that the player drops on it and look through the data table of possible recipes, where if the player gives an iron ingot, the only outputs shown will be things such as an Iron Sword Blade and an Iron Dagger Blade. I also added a small UI widget to show off the possible outcomes to the player. The anvil also has an interactive function on it, where the player can index through the list of recipes.<h4> Data Tables/Structs vs. Lists/Serializable Objects </h4>&emsp; In Unreal, I utilize Data Tables with Structs to allow myself to add new items on the fly without creating a hassle for issues with blueprints causing issues. Compared to Unity’s List with Serializable Objects, I did find it slightly easier to use the structs in comparison to serializable objects.",
+            "retrospect": "",
+            "engine": "Unity, Unreal Engine 5",
+            "tools": "C#, Blender, Shader Graph, Visual Effects Graph",
+            "link": "https://www.youtube.com/@BillyBonkDev",   
+            "videos": [
+                {
+                    "url" : "https://www.youtube.com/embed/VLj11Wgbzvw"
+                },
+                {
+                    "url" : "https://www.youtube.com/embed/t24p6YaeBNw"
+                }
+            ],
+            "blueprints":[
+                {
+                    "img" : "./img/blacksmith/anvilBlueprint.png",
+                    "url" : "https://blueprintue.com/render/pw9tco2a/",
+                    "subtitle": "Anvil"
+                },
+                {
+                    "img" : "./img/blacksmith/grabbableBlueprint.png",
+                    "url": "https://blueprintue.com/render/oanpyjnw/",
+                    "subtitle": "Grabbable Items"
+                }
+            ]
+
+        },   
         {
             "type": "game",
             "name": "Ninjas On Trampolines",
@@ -51,68 +88,6 @@
         },
         {
             "type": "game",
-            "name": "Nebulicious",
-            "coverImage": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/nebulicious.gif",
-            "trailer": "",
-            "timeSpent": "10 Days",
-            "role": "Technical Artist",
-            "overview": "&emsp;Nebulicious is a prototype of a casual cooking game with the twist of using two separate movement options to gather ingredients and cook donuts. The project was made for the Society of Play's Hexcode Jam 3, which required us to use a specific color palette named 'Hot Panda'.",
-            "goals": "",
-            "responsibilities": "&emsp;Durign the prototype development of Nebulicious, I was responsible for the shaders, visual effects, setting up the character animations, and simple 3D modeling. <br><br>&emsp;I've started to become more accustomed with Unity's Visual Effects Graph system. I definitely had more flexibility when using shader graphs for the particles, making it easier for myself to customize the look of the effect. With this I feel that I have been a little more creative with what I made and making the things I made a little unique. <br><br>&emsp;I'm happy with how this game turned out, given the 10-day time limit. I plan to continue working on this game, depending on how members of the team feel about it. There are still improvements that I would like to do on the current shaders within the game as well as try to make a shader for a procedurally generated planet to give some detail to it.",
-            "retrospect": "",
-            "engine": "Unity",
-            "tools": "C#, Shader Graph, Blender, Visual Effects Graph",
-            "link": "",
-            "imageGallery": [
-                {
-                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_title.png",
-                    "subtitle": "Menu Screen"
-                },
-                {
-                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/nebulicious.gif",
-                    "subtitle": "Gameplay"
-                },
-                {
-                    "url": "https://raw.githubusercontent.com/scc8371/scc8371.github.io/main/media/nebulicious/neb_sceneView.png",
-                    "subtitle": "Game scene setup"
-                },
-                {
-                    "url": "./img/vfx/rocketsmoke.gif",
-                    "subtitle": "Rocket smoke VFX"
-                },
-                {
-                    "url": "./img/vfx/greasebubble.gif",
-                    "subtitle": "Grease plane & bubbles"
-                }
-            ]
-        }, 
-        {
-            "type": "game",
-            "name": "Wranglin'",
-            "coverImage": "./img/wranglin/mainpage.gif",
-            "trailer": "",
-            "timeSpent": "3 Days",
-            "role": "Technical Artist",
-            "overview": "&emsp;Wranglin' is a 3D single player game. Where the player has a lasso that loops around animals to wrangle them into their correct pens. The game was made for the Game Maker's Toolkit 2025 Game Jam with the theme being loop.",
-            "goals": "",
-            "responsibilities": "&emsp;I am one of three people on the team. I was responsible for the visual effects, shaders, and some lighting. For the explosion visual effect I used Unity's built in particle system. This was due to our goal for having the game available on WebGL which would not support Visual Effects Graph since that is still not usuable in the Built-In pipeline. <br><br>&emsp;For the shaders I used Unity's Shader Graph to create a skybox shader to move away from match the rest of the art style of the game. I also made a small shader for our dynamite object to give it a pattern similar to that of the cows so that it looks similar and if a player is not paying attention they will lasso a dynamite onto themselves and get stunned. With our crunch time we decided to import all the models such as the farm assets and animals from the Unity Asset Store to save time. <br><br>&emsp;Overall I am happy with how the game turned out, given the 3-day time limit. I would like to polish the game more by adding animations to the animals and add a player model, currently the player is a plain capsule. I would also like to improve the skybox shader to add a day/night cycle to it to give another visual indicator of time passing in the game.",
-            "retrospect": "",
-            "engine": "Unity",
-            "tools": "C#, Shader Graph",
-            "link": "https://willyjeon.itch.io/wranglin",
-            "imageGallery": [
-                 {
-                    "url": "./img/wranglin/title.png",
-                    "subtitle": "Title"
-                },
-                {
-                    "url": "./img/wranglin/mainmenu.png",
-                    "subtitle": "Main Menu"
-                }
-            ]
-        },
-        {
-            "type": "game",
             "name": "PROJECT: Gladiator",
             "coverImage": "./img/gladiator/swordattack.gif",
             "trailer": "",
@@ -133,42 +108,6 @@
                     "url": "./img/gladiator/backstep.gif"
                 }
             ]
-        }, 
-        {
-            "type": "game",
-            "name": "Untitled Blacksmith Game",
-            "coverImage": "./img/blacksmith/blacksmith.gif",
-            "trailer": "",
-            "timeSpent": "December 2025 - Present",
-            "role": "Sole Developer",
-            "overview": "&emsp;This blacksmith game is a simple co-op friendslop game where you and your friends start off in a blacksmith shop and you have to complete orders in order to gain money and keep the shop running. As you progress through the game you will be able to upgrade your shop, unlock new ores, and new recipes that you can sell to your customers. This draws inspiration from the wave of friendslop co-op games like Peak and Lethal Company.",
-            "goals": "&emsp;My goal for this game is to develop my skills in game developement and design. I want to create a fun and engaging game that my friends and I can play together.",
-            "responsibilities": "&emsp;My goal for this game is to develop my skills in game developement and design. I want to create a fun and engaging game that my friends and I can play together. I want to primarily focus on the development side with making a modular system where if I want to add a product, like a halberd, all I would need to do would be add the recipe objects for the final product, and any corresponding recipes for the pieces of the halberd. <br>&emsp;My initial step for this game was to create the basic interaction of picking up items, as that will be the main action the player will be doing throughout the game. This interaction function will also be used to interacting with levers, buttons, and the shop to buy new recipes and unlock new ores. While in the beginning of the Unity version I had intially set it up so that each interaction was set up in the player controller script, I later found this to be somewhat inefficient. So I implemented a simple interface that would have a universal function for all the objects that the player could interact with. There is also the issue with classes where the grabbable script for all the objects that the player can pickup was a class on its own and is not a parent class to any other objects. So most prefabs and instantiated objects would have both the PhysicsGrabbable script and any other specific scripts to itself. In Unreal however, I made it a little more cleaner with the base parent blueprint contain the hold script for all objects that the player could pickup. After that I started to create the stations being the furnace, anvil, chopping block, shop, and assembly station. <br>&emsp; All of these have their own scriptable objects for recipes pertaining to what needs to be put into/onto the station in order to create something from it. For the furnace you can input basic ores like iron ore to make an iron ingot, but with that you can also create steel ingots by putting in a coal ore and iron ore together. The serializable object for the anvil holds information the string name of the input and output objects as well of the prefab for the output in Unity. So when an iron ingot is put on top it looks through the objects to find matching inputs of the iron ingot and then returning a list of possible outputs. This is done so that I can save on not needing to create multiple different prefabs for the ingots and other products. This is done with the other serializable objects with the names of the input and out being strings, they mainly used to check for available/correct recipes depending on the input. In my opinion this is the best way I can solve the issue for wanting to add more products in the future without needing to add more prefab variants. <br>&emsp;This is also done in the Unreal Engine version with a slight difference in that I have created unique blueprints for each input and output that are children of the same parent blueprint. In Unreal Engine I utilize data tables with structs, which is what I see as the equivalent to what I have in the Unity version of my lists of serliazable objects. I did find it slightly easier to utilize the data tables with structs in comparison to the serizable objects. However, if I can find a way to just utilize the master ingot blueprint to create instance based variants for each type of ingot I will most likely follow suit with that.",
-            "retrospect": "",
-            "engine": "Unity, Unreal Engine 5",
-            "tools": "C#, Blender, Shader Graph, Visual Effects Graph",
-            "link": "https://www.youtube.com/@BillyBonkDev",   
-            "videos": [
-                {
-                    "url" : "https://www.youtube.com/embed/VLj11Wgbzvw"
-                },
-                {
-                    "url" : "https://www.youtube.com/embed/t24p6YaeBNw"
-                }
-            ],
-            "blueprints":[
-                {
-                    "img" : "./img/blacksmith/anvilBlueprint.png",
-                    "url" : "https://blueprintue.com/render/pw9tco2a/",
-                    "subtitle": "Anvil"
-                },
-                {
-                    "img" : "./img/blacksmith/grabbableBlueprint.png",
-                    "url": "https://blueprintue.com/render/oanpyjnw/",
-                    "subtitle": "Grabbable Items"
-                }
-            ]
-
         },
         {
             "type": "game",
