@@ -162,13 +162,14 @@ export function loadProjectData(){
                 
                 img.setAttribute("src", images[i].url);
                 container.classList.add("imgs");
-                container.appendChild(img);
-
-                if(images[i].subtitle){
+                 if(images[i].subtitle){
                     let caption = document.createElement("p");
                     caption.innerHTML = images[i].subtitle;
                     container.appendChild(caption);
                 }
+                container.appendChild(img);
+
+               
     
                 columns[i%columns.length].appendChild(container);
             }
