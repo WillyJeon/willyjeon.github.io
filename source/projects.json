@@ -121,18 +121,33 @@
             "role": "",
             "overview": "&emsp;Project: Gladiator is a two-player co-op game that pits players against each other in intense 2v2 combat. Teams must rely on communication and synergy to emerge victorious and survive the brutal arena battles. Matches bring four duos into a Colosseum-inspired setting, capturing the grandeur and intensity of ancient gladiatorial contests. <br>&emsp;Drawing inspiration from the movie Gladiator, the game introduces a unique mechanic influenced by Chained Together and Bred & Fred, combined with the deliberate combat style of Souls-like games such as Elden Ring and Dark Souls. <br>&emsp;Players are tethered to their partners, restricting movement to within a fixed range. This constraint applies to all actions, including backstepping and rolling, emphasizing coordination between teammates. Combat unfolds from a third-person perspective, featuring light and heavy attacks, as well as intricate combos, all designed to deliver a visceral and rewarding experience. <br>&emsp;Project: Gladiator challenges players to master the art of cooperation while embracing the high-stakes tension of the arena.",
             "goals": "",
-            "responsibilities": "&emsp;I am the sole developer of Project: Gladiator. The combat system is heavily inspired by Souls-like games because I have always admired the deliberate, tactical feel of their combat. However, I wanted to create something that emphasizes cooperation, which is why I introduced the chain mechanic tethering players together. This feature forces players to rely on each other, creating a uniquely challenging and rewarding co-op experience. <br>&emsp;I envisioned the gameplay to reflect the tension and stakes of gladiatorial combat, much like Maximus's first fight in Gladiator. That scene left a lasting impression on me, and I wanted to capture its raw energy and life-or-death intensity within the game. Each match begins with players starting in different parts of the arena, with only the last surviving team emerging victorious. <br>&emsp;Co-op games like It Takes Two, Chained Together, and Bread and Fred inspired me because of how engaging they are for players and spectators alike. I noticed how these games often generate moments of stress, frustration, and teamwork that are both entertaining to play and fun to watch. Seeing content creators share their experiences with these games influenced my decision to incorporate similar dynamics into Project: Gladiator. <br>&emsp;This game is my way of combining everything I love about challenging combat, cooperative gameplay, and the emotional highs and lows that make these experiences memorable.",
+            "responsibilities": "&emsp;I am the sole developer of Project: Gladiator. The combat system is heavily inspired by Souls-like games because I have always admired the deliberate, tactical feel of their combat. However, I wanted to create something that emphasizes cooperation, which is why I introduced the chain mechanic tethering players together. This feature forces players to rely on each other, creating a uniquely challenging and rewarding co-op experience. <h4> Chain Mechanic </h4>&emsp;For the initial tether, I decided against using standard Unity physics joints. Instead, I wrote my own boundary handler using C#. The way I set it up, the script constantly checks the distance between you and your partner. Once that distance goes past the maximum radius, it calculates a midpoint between the two of you. While setting this up I kept in mind that this was for a multiplayer environment, so I added IsOwner as a check to make sure that it will only execute for the local player. This kept the movement as smooth as possible and prevented any issues between players. If a player hits a boundary constraint, the script grabs their CharacterController and applies a forced movement back toward their partner.<h4> Netcode for Gameobjects </h4>&emsp; Since Project: Gladiator is a fast-paced fighting game, I wanted the game to feel responsive for the players. To do this, in most scripts I ran an IsOwner check to make sure that you are the local player, in which the scripts would run their own calculations, check for bools, and other logic. Then it would send that info to the Player Network Manager script so that the other players/clients in the game can use that information.<h4> Lobby </h4>Before dropping players into the arena, I needed a way to allow players to actually signify that they were ready to play a game. I built a lobby manager from scratch that uses Unity Netcode and Steamworks API. When a player connects, the script would grab their SteamId and name and store it within a dictionary using their network client ID as the key. This would be used to check a player's ready status. I also made a failsafe loop that validates the ready-state of every value in the dictionary, ensuring that the host can't trigger the game scene to load until all clients are completely synced and ready. ",
             "retrospect": "",
             "engine": "Unity",
             "tools": "C#, Shader Graph, Visual Effects Graph",
             "link": "",
             "imageGallery": [
                 {
-                    "url": "./img/gladiator/swordattack.gif"
+                    "url": "./img/gladiator/chained.gif",
+                    "subtitle" : "Chains"
                 },
                 {
-                    "url": "./img/gladiator/backstep.gif"
+                    "url": "./img/gladiator/chainCode.png",
+                    "subtitle" : "Chain Code"
+                },
+                {
+                    "url": "./img/gladiator/single.gif",
+                    "subtitle" : "Fighting"
+                },
+                {
+                    "url": "./img/gladiator/lobby.gif",
+                    "subtitle" : "Lobby"
+                },
+                {
+                    "url": "./img/gladiator/playerNetwork.gif",
+                    "subtitle" : "Player Network Manager Inspector"
                 }
+                
             ]
         },
         {
