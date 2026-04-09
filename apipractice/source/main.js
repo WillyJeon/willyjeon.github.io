@@ -16,6 +16,14 @@ let dealerValue = 0;
 let hasAce = false;
 let initialCards = false;
 
+/*
+    TODO:
+    - First: Finish the actual blackjack game
+    - Second: Remake the app in React, using the same API, and add some styling to it. Use Typescript // .tsx
+    - Third: Track wins/losses and add a reset button to the React app.
+    - Fourth: Integrate some backend to track user stats with a global leaderboard on longest winstreak, most wins, etc.
+*/
+
 deckButton.addEventListener("click", async () =>{
     let amount = deckInput.value;
     newDeck(amount);
@@ -27,7 +35,6 @@ button.addEventListener("click", async () =>{
     let cardCount = 4;
     let cards = await dealCards(cardCount);
     cardVisuals(cards);
-
 });
 
 hitButton.addEventListener("click", async () =>{
